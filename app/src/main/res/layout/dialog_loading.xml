@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fffff6f4">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff8d8d8d"
+            android:fontFamily="sans-serif-light"
+            android:text="Fetching Quote ..."
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20sp"
+            android:padding="30sp" />
+
+       <!-- <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text=" Ok "
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical|center_horizontal" />-->
+
+</LinearLayout>

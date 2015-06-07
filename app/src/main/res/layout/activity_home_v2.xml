@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#fff">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+           android:paddingTop="10sp"
+           android:layout_weight="1.01">
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:orientation="horizontal"
+               android:layout_marginTop="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="79dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="design quote"
+                    android:gravity="center"
+                    android:id="@+id/textView"
+                    android:textColor="#ff16b6df"
+                    android:textSize="25sp"
+                    android:layout_weight="0.25" />
+
+               <ImageButton
+                   android:layout_width="46dp"
+                   android:layout_height="80dp"
+                   android:id="@+id/sendButton"
+                   android:padding="0dp"
+                   android:scaleType="fitCenter"
+                   android:background="@android:color/transparent"
+                   android:layout_weight="0.24"
+                   android:src="@drawable/custom_send_btn"
+                   android:layout_gravity="right|center_horizontal"
+                   android:layout_marginLeft="50dp"
+                   android:layout_marginTop="20dp"
+                   android:clickable="true"
+                   android:baselineAlignBottom="false" />
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30sp"
+                android:paddingRight="30sp"
+                android:paddingBottom="30sp"
+                android:orientation="vertical"
+                >
+               <ImageView
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/top_quote"
+                    android:layout_marginTop="0sp"
+                    android:layout_marginBottom="20sp"
+                    android:paddingLeft="0sp"
+                    android:paddingTop="20sp"
+                    android:paddingRight="20sp"
+                    android:paddingBottom="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Behavioral design is all about feeling in control. Includes: usability, understanding, but also the feel."
+                    android:id="@+id/quote_tv"
+                    android:textColor="#ff454545"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp" />
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="- DIETER RAMS"
+                        android:id="@+id/author_tv"
+                        android:textColor="#ff16b6df"
+                        android:textStyle="bold"
+                        android:layout_marginTop="41dp"
+                        android:textSize="20sp" />
+
+
+                    <ImageView
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/bottom_quote"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginBottom="20sp"
+                        android:paddingLeft="20sp"
+                        android:paddingTop="20sp"
+                        android:paddingRight="0sp"
+                        android:paddingBottom="20sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+           </LinearLayout>
+       </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:id="@+id/imageButton2"
+        android:layout_gravity="center_horizontal"
+        android:padding="10sp"
+        android:src="@android:drawable/ic_media_play"
+        android:clickable="true"
+        android:background="@drawable/custom_next_btn"/>
+        <!--android:background="#ff16b6df"-->
+
+</LinearLayout>
